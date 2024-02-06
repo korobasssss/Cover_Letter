@@ -1,0 +1,74 @@
+aside {
+  display: grid;
+  grid-template-rows: 280px auto;
+}
+
+.photo {
+  width: 100%;
+}
+.union {
+  position: absolute;
+  width: 148px;
+  height: 65px;
+  top: 98px;
+  left: 96px;
+  rotate: 20deg;
+}
+
+.mainAside {
+  top: 40px;
+  display: grid;
+  grid-template-rows: 19px auto;
+  height: 473px;
+}
+
+.triangle {
+  display: grid;
+  justify-self: center;
+  width: 60px;
+  height: 19px;
+}
+
+.bio {
+  padding: 25px 20px 25px 20px;
+  display: grid;
+  grid-template-rows: 60px auto;
+  row-gap: 20px;
+
+  background-color: rgba(245, 27, 27, 1);
+  border-radius: 24px 24px 0 0;
+  color: rgba(255, 255, 255, 1);
+}
+
+.info {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 8px;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.partContacts {
+  display: grid;
+  grid-template-columns: 24px auto;
+  column-gap: 10px;
+}
+
+.contacts {
+  height: 156px;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 20px;
+}
+
+.contacts img {
+  display: grid;
+  align-self: center;
+}
+.contacts a {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}

@@ -1,0 +1,48 @@
+.about {
+  display: grid;
+  row-gap: 32px;
+  color: white;
+}
+
+.description {
+  display: grid;
+  row-gap: 20px;
+}
+
+.linkToProj {
+  color: #d58383;
+  text-decoration: none;
+}
+
+.table {
+  height: 663px;
+  padding: 28px 28px 28px 28px;
+  border: 1px solid white;
+}
+
+.rows {
+  margin: 20px 0 20px;
+  display: grid;
+  grid-template-columns: 25% auto;
+}
+
+.colName {
+  font-weight: 600;
+}
+
+.column {
+  display: grid;
+  row-gap: 8px;
+}
+
+.addInfo {
+  display: grid;
+  row-gap: 6px;
+
+  opacity: 0.6;
+}
+
+.skills {
+  display: flex;
+  gap: 32px;
+}
