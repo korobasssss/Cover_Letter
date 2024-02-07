@@ -32,3 +32,14 @@ p {
   margin: 0;
 }
 
+@media screen and (orientation: portrait) and (max-width: 1000px ){
+  body {
+    margin: 20px;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+

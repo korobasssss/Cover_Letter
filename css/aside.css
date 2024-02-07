@@ -30,10 +30,10 @@ aside {
 }
 
 .bio {
-  padding: 25px 20px 25px 20px;
+  padding: 40px 20px 25px 20px;
   display: grid;
   grid-template-rows: 60px auto;
-  row-gap: 20px;
+  row-gap: 40px;
 
   background-color: rgba(245, 27, 27, 1);
   border-radius: 24px 24px 0 0;
@@ -72,3 +72,13 @@ aside {
   color: rgba(255, 255, 255, 1);
   text-decoration: none;
 }
+
+@media screen and (orientation: portrait) and (max-width: 1000px ){
+  aside {
+    width: 320px;
+  }
+  .union {
+    left: 75px;
+  }
+}
+

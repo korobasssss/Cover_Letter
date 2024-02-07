@@ -1,12 +1,16 @@
 .about {
-  display: grid;
-  row-gap: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   color: white;
 }
 
 .description {
-  display: grid;
-  row-gap: 20px;
+  width: 100%;
+  max-width: 690px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .linkToProj {
@@ -15,15 +19,13 @@
 }
 
 .table {
-  height: 663px;
+  height: 100%;
   padding: 28px 28px 28px 28px;
   border: 1px solid white;
 }
 
 .rows {
   margin: 20px 0 20px;
-  display: grid;
-  grid-template-columns: 25% auto;
 }
 
 .colName {
@@ -44,5 +46,22 @@
 
 .skills {
   display: flex;
-  gap: 32px;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+@media screen and (orientation: landscape){
+  .rows {
+    display: grid;
+    grid-template-columns: 15% auto;
+    column-gap: 10%;
+  }
+}
+
+@media screen and (orientation: portrait){
+  .rows {
+    display: grid;
+    grid-template-rows: 15% auto;
+    row-gap: 16px;
+  }
 }
