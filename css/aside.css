@@ -79,6 +79,10 @@ aside {
   }
   .union {
     left: 75px;
+    top: 148px
+  }
+  .mainAside {
+    height: 350px;
   }
 }
 

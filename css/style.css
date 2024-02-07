@@ -36,7 +36,12 @@ p {
   body {
     margin: 20px;
   }
+  .logo img  {
+    display: grid;
+    justify-self: start;
+  }
   .main {
+    margin-top: 48px;
     display: flex;
     flex-direction: column;
     gap: 40px;
