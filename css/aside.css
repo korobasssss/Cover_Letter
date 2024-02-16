@@ -32,7 +32,7 @@ aside {
 .bio {
   padding: 40px 20px 25px 20px;
   display: grid;
-  grid-template-rows: 60px auto;
+  grid-template-rows: 80px auto;
   row-gap: 40px;
 
   background-color: rgba(245, 27, 27, 1);
@@ -42,13 +42,13 @@ aside {
 
 .info {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto 20px;
   row-gap: 8px;
 }
 
 .name {
-  font-weight: 600;
-  font-size: 1.2rem;
+  font-family: "Redcollar", sans-serif;
+  font-size: 1.4rem;
 }
 
 .partContacts {
@@ -76,6 +76,8 @@ aside {
 @media screen and (orientation: portrait) and (max-width: 1000px ){
   aside {
     width: 320px;
+    display: grid;
+    justify-self: center;
   }
   .union {
     left: 75px;

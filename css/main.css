@@ -6,8 +6,7 @@
 }
 
 .description {
-  width: 100%;
-  max-width: 690px;
+  width: 60%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -29,7 +28,8 @@
 }
 
 .colName {
-  font-weight: 600;
+  font-family: "Redcollar", sans-serif;
+  font-weight: 400;
 }
 
 .column {
@@ -63,5 +63,8 @@
     display: grid;
     grid-template-rows: 15% auto;
     row-gap: 16px;
+  }
+  .description {
+    width: 100%;
   }
 }

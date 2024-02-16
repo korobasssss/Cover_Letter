@@ -1,13 +1,25 @@
-html {
-  font-size: 1em;
-  line-height: 1.4;
-
-  background-color: rgba(0, 0, 0, 1);
-  font-family: "Montserrat", sans-serif;
+@import url(https://db.onlinewebfonts.com/c/f02cf2e6e27a17bcfe9efa18c041c208?family=Redcollar);
+@import url('./fonts/font');
+@font-face {
+  font-family: "Redcollar";
+  src: url("https://db.onlinewebfonts.com/t/f02cf2e6e27a17bcfe9efa18c041c208.eot");
+  src: url("https://db.onlinewebfonts.com/t/f02cf2e6e27a17bcfe9efa18c041c208.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/f02cf2e6e27a17bcfe9efa18c041c208.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/f02cf2e6e27a17bcfe9efa18c041c208.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/f02cf2e6e27a17bcfe9efa18c041c208.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/f02cf2e6e27a17bcfe9efa18c041c208.svg#Redcollar")format("svg");
 }
+
 
 body {
   margin: 20px 40px 40px 40px;
+
+  font-size: 1em;
+
+  background-color: rgba(0, 0, 0, 1);
+  font-family: "TT Commons", sans-serif;
+  line-height: 24px;
+  font-weight: 400;
 }
 
 .logo {
@@ -20,9 +32,7 @@ body {
 }
 
 .main {
-  display: grid;
-  grid-template-columns: 322px auto;
-  column-gap: 31px;
+
 }
 
 hr {
@@ -30,6 +40,14 @@ hr {
 }
 p {
   margin: 0;
+}
+
+@media screen and (orientation: landscape) {
+  .main {
+    display: grid;
+    grid-template-columns: 322px auto;
+    column-gap: 31px;
+  }
 }
 
 @media screen and (orientation: portrait) and (max-width: 1000px ){
@@ -42,9 +60,8 @@ p {
   }
   .main {
     margin-top: 48px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+    display: grid;
+    row-gap: 40px;
   }
 }
 
